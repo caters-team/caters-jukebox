@@ -39,9 +39,7 @@ const AlbumTop = ({ album }: { album: Album }) => {
                 ))}
               </span>
               <span className="text-gray-500 dark:text-gray-400">
-                {` • ${getYear(album.release_date)} • ${
-                  album.total_tracks
-                } tracks`}
+                {` • ${getYear(album.release_date)} • ${album.total_tracks} 曲`}
               </span>
             </span>
           </div>

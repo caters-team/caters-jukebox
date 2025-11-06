@@ -24,7 +24,7 @@ const SearchForm = ({
 
   return (
     <Form onSubmit={handleSubmit}>
-      <ComponentCard title="Search Fields">
+      <ComponentCard title="検索フィールド">
         <div className="space-y-6">
           <div className="max-w-full overflow-auto">
             <div className="inline-flex items-center shadow-theme-xs">
@@ -40,7 +40,7 @@ const SearchForm = ({
                   })
                 }
               >
-                Artist
+                アーティスト
               </Button>
               <Button
                 type="button"
@@ -54,7 +54,7 @@ const SearchForm = ({
                   })
                 }
               >
-                Album
+                アルバム
               </Button>
               <Button
                 type="button"
@@ -68,7 +68,7 @@ const SearchForm = ({
                   })
                 }
               >
-                Track
+                トラック
               </Button>
               <Button
                 type="button"
@@ -82,7 +82,7 @@ const SearchForm = ({
                   })
                 }
               >
-                Playlist
+                プレイリスト
               </Button>
             </div>
           </div>
@@ -97,7 +97,7 @@ const SearchForm = ({
             <div className="w-full">
               <Input
                 type="text"
-                placeholder="Type to search..."
+                placeholder="入力して検索..."
                 defaultValue={data.q}
                 onChange={(e) =>
                   setData({

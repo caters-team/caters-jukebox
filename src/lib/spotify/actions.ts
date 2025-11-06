@@ -20,10 +20,10 @@ export const redirectToSpotify = async () => {
 export const startPlayback = async () => {
   try {
     await api.startPlayback();
-    await setFlash("success", "Playback started successfully.");
+    await setFlash("success", "再生を開始しました。");
   } catch (error) {
     console.log(error);
-    await setFlash("error", "Failed to start playback.");
+    await setFlash("error", "再生を開始できませんでした。");
   }
 
   redirect("/player");
@@ -32,10 +32,10 @@ export const startPlayback = async () => {
 export const pausePlayback = async () => {
   try {
     await api.pausePlayback();
-    await setFlash("success", "Playback paused successfully.");
+    await setFlash("success", "再生を停止しました。");
   } catch (error) {
     console.log(error);
-    await setFlash("error", "Failed to pause playback.");
+    await setFlash("error", "再生を停止できませんでした。");
   }
 
   redirect("/player");
@@ -44,10 +44,10 @@ export const pausePlayback = async () => {
 export const skipToNext = async () => {
   try {
     await api.skipToNext();
-    await setFlash("success", "Skipped to next track successfully.");
+    await setFlash("success", "次のトラックにスキップしました。");
   } catch (error) {
     console.log(error);
-    await setFlash("error", "Failed to skip to next track.");
+    await setFlash("error", "次のトラックにスキップできませんでした。");
   }
 
   redirect("/player");
@@ -56,10 +56,10 @@ export const skipToNext = async () => {
 export const skipToPrevious = async () => {
   try {
     await api.skipToPrevious();
-    await setFlash("success", "Skipped to previous track successfully.");
+    await setFlash("success", "前のトラックにスキップしました。");
   } catch (error) {
     console.log(error);
-    await setFlash("error", "Failed to skip to previous track.");
+    await setFlash("error", "前のトラックにスキップできませんでした。");
   }
 
   redirect("/player");
@@ -68,10 +68,10 @@ export const skipToPrevious = async () => {
 export const setPlaybackVolume = async (volumePercent: number) => {
   try {
     await api.setPlaybackVolume(volumePercent);
-    await setFlash("success", "Volume set successfully.");
+    await setFlash("success", "ボリュームを設定しました。");
   } catch (error) {
     console.log(error);
-    await setFlash("error", "Failed to set volume.");
+    await setFlash("error", "ボリュームを設定できませんでした。");
   }
 
   redirect("/player");
@@ -80,10 +80,10 @@ export const setPlaybackVolume = async (volumePercent: number) => {
 export const addItemToPlaybackQueue = async (uri: string) => {
   try {
     await api.addItemToPlaybackQueue(uri);
-    await setFlash("success", "Track added to queue successfully.");
+    await setFlash("success", "トラックをキューに追加しました。");
   } catch (error) {
     console.log(error);
-    await setFlash("error", "Failed to add track to queue.");
+    await setFlash("error", "トラックをキューに追加できませんでした。");
   }
 
   redirect("/dashboard");

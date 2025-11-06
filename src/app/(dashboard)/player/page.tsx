@@ -14,7 +14,7 @@ const Page = async () => {
           ))}
         </div>
       ) : (
-        <Alert variant="warning" title="No device detected." />
+        <Alert variant="warning" title="デバイスが見つかりませんでした。" />
       )}
     </>
   );

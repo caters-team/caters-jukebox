@@ -19,7 +19,7 @@ const PlaylistTop = ({ playlist }: { playlist: Playlist }) => {
               {playlist.name}
             </h4>
             <span className="text-base text-gray-500 dark:text-gray-400">
-              {`${playlist.owner.display_name} • ${playlist.tracks.total} tracks`}
+              {`${playlist.owner.display_name} • ${playlist.tracks.total} 曲`}
             </span>
           </div>
         </div>

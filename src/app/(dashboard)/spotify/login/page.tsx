@@ -8,12 +8,12 @@ const Page = async () => {
   return (
     <>
       {isLogin ? (
-        <Alert variant="success" title="You are logged in to Spotify.">
-          <LoginButton>Change Spotify Account</LoginButton>
+        <Alert variant="success" title="Spotifyにログインしています。">
+          <LoginButton>Spotifyアカウントを変更する</LoginButton>
         </Alert>
       ) : (
-        <Alert variant="warning" title="You are not logged in to Spotify.">
-          <LoginButton>Login to Spotify</LoginButton>
+        <Alert variant="warning" title="Spotifyにログインしていません。">
+          <LoginButton>Spotifyにログイン</LoginButton>
         </Alert>
       )}
     </>

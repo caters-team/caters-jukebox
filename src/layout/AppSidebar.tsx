@@ -24,22 +24,22 @@ type NavItem = {
 const navItems: NavItem[] = [
   {
     icon: <GridIcon />,
-    name: "Dashboard",
+    name: "ダッシュボード",
     path: "/dashboard",
   },
   {
     icon: <SearchIcon />,
-    name: "Search",
+    name: "検索",
     path: "/search",
   },
   {
     icon: <PlayCircleIcon />,
-    name: "Player",
+    name: "プレイヤー",
     path: "/player",
   },
   {
     icon: <UserCircleIcon />,
-    name: "Spotify Account",
+    name: "Spotifyアカウント",
     path: "/spotify/login",
   },
 ];
@@ -266,7 +266,7 @@ const AppSidebar: React.FC = () => {
           <LogoIcon />
           {(isExpanded || isHovered || isMobileOpen) && (
             <span className="ml-3 font-medium text-gray-800 text-lg dark:text-white/90">
-              Spotify Jam
+              Caters Jukebox
             </span>
           )}
         </Link>
@@ -283,7 +283,7 @@ const AppSidebar: React.FC = () => {
                 }`}
               >
                 {isExpanded || isHovered || isMobileOpen ? (
-                  "Menu"
+                  "メニュー"
                 ) : (
                   <HorizontaLDots />
                 )}

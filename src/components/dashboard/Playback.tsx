@@ -52,7 +52,7 @@ const Playback = ({ playback }: { playback: PlaybackState }) => {
               </div>
               <div>
                 <h4 className="text-3xl font-semibold text-gray-800 dark:text-white/90">
-                  No track is playing
+                  何も再生されていません
                 </h4>
               </div>
             </>

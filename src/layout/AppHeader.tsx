@@ -131,7 +131,7 @@ const AppHeader: React.FC = () => {
                 fill=""
               />
             </svg>
-            Sign out
+            ログアウト
           </button>
         </div>
       </div>

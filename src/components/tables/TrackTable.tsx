@@ -54,7 +54,7 @@ const TrackTable = ({
                   isHeader
                   className="px-4 py-3 font-medium text-gray-500 text-start text-sm dark:text-gray-400"
                 >
-                  Title
+                  タイトル
                 </TableCell>
                 <TableCell
                   isHeader
@@ -128,7 +128,7 @@ const TrackTable = ({
         className="max-w-[600px] p-5 lg:p-10"
       >
         <span className="font-semibold text-gray-800 mb-7 text-xl dark:text-white/90">
-          Request this track?
+          このトラックをリクエストしますか?
         </span>
 
         {modalData.track && (
@@ -171,7 +171,7 @@ const TrackTable = ({
                 variant="outline"
                 onClick={closeModal}
               >
-                Close
+                閉じる
               </Button>
               <Button
                 type="button"
@@ -183,7 +183,7 @@ const TrackTable = ({
                   }
                 }}
               >
-                Request
+                リクエスト
               </Button>
             </div>
           </>

@@ -24,7 +24,7 @@ const TableSwitcher = ({
             className="sm:px-6 rounded-none first:rounded-l-lg last:rounded-r-lg"
             onClick={() => setTable("queue")}
           >
-            Queue
+            キュー
           </Button>
           <Button
             type="button"
@@ -32,7 +32,7 @@ const TableSwitcher = ({
             className="sm:px-6 rounded-none first:rounded-l-lg last:rounded-r-lg"
             onClick={() => setTable("recent")}
           >
-            Recently Played
+            最近再生した曲
           </Button>
         </div>
       </div>

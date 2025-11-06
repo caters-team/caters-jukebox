@@ -20,9 +20,9 @@ export const GET = async (request: NextRequest) => {
     if (code !== null) {
       await requestAccessToken(code);
 
-      await setFlash("success", "Spotify account linked successfully.");
+      await setFlash("success", "Spotifyアカウントに連携しました。");
     } else {
-      await setFlash("error", "Failed to link Spotify account.");
+      await setFlash("error", "Spotifyの認証に失敗しました。");
     }
   }
 

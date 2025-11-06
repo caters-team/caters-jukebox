@@ -118,7 +118,7 @@ const Device = ({ device }: { device: DeviceType }) => {
       ) : (
         <div className="mt-2">
           <span className="text-base text-gray-500 dark:text-gray-400">
-            Device not active
+            デバイスがアクティブではありません
           </span>
         </div>
       )}

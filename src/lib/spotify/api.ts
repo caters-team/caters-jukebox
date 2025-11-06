@@ -114,6 +114,7 @@ const sendRequest = async (
     params,
     headers: {
       Authorization: `Bearer ${token}`,
+      "Accept-Language": "ja",
     },
   });
 
