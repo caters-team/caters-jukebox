@@ -29,6 +29,7 @@ const nextConfig: NextConfig = {
         pathname: "/image/**",
       },
     ],
+    unoptimized: true,
   },
   skipMiddlewareUrlNormalize: true,
 };
