@@ -20,9 +20,6 @@ const SPOTIFY_SCOPES = [
   "user-modify-playback-state",
   "user-read-currently-playing",
   "user-read-recently-played",
-  "streaming",
-  "user-read-email",
-  "user-read-private",
 ];
 
 export const getAuthorizeUrl = (state: string) => {
@@ -94,7 +91,7 @@ const refreshAccessToken = async () => {
   );
 };
 
-export const getAccessToken = async () => {
+const getAccessToken = async () => {
   let accessToken = await redis.getAccessToken();
 
   if (!accessToken) {
